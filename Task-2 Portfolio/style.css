@@ -94,12 +94,11 @@ nav div:hover{
         border: 2px solid orangered;
         color: orangered;
         transition: .2s ease;
-        background: tra;
     }
 
     .social-media{
         display: flex;
-        gap: 50px;
+        gap: 20px;
         font-size: 2rem;
     }
 
@@ -181,7 +180,7 @@ nav div:hover{
 
 
 .skills{
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     width:  100%;
     height: 70vh;
     display: flex;
@@ -191,14 +190,12 @@ nav div:hover{
 
 
 .skills-left{
-    width: 50%;
-    height: 70vh;
-    display: inline-flex;
+    width: 40%;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    
     color: #fff;
     gap: 10px;
+    
 }
 
 
@@ -206,4 +203,38 @@ nav div:hover{
 .skills-left h1{
     font-size: 3rem;
     color: orangered;
+
 }
+
+.skills-right{
+    /* background-color: blue; */
+    width:  40%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.skills-right span{
+    
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: red;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
