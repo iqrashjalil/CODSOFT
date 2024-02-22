@@ -36,6 +36,7 @@ Ul li{
     font-size: 16px;
     font-weight: 500;
     transition: .2s ease;
+    cursor: pointer;
     
 }
 
@@ -55,8 +56,11 @@ nav div:hover{
 
 .section1{
     background-color: var(--bg-color);
-    width:  100vw;
+    width:  100%;
     height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -67,7 +71,7 @@ nav div:hover{
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    padding: 100px;
+    
     color: #fff;
     gap: 10px;
 }
@@ -77,34 +81,32 @@ nav div:hover{
     color: orangered;
 }
 
-.section1-left .hello{
-    font-weight: 600;
-    font-size: 1.5rem;
-}
 
-.social-media a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: blue; */
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    border: 2px solid orangered;
-    color: orangered;
-    transition: .2s ease;
-}
 
-.social-media{
-    display: flex;
-    gap: 50px;
-    font-size: 2rem;
-}
+    .social-media a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: blue; */
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: 2px solid orangered;
+        color: orangered;
+        transition: .2s ease;
+        background: tra;
+    }
 
-.social-media a:hover{
-    color: var(--bg-color);
-    background-color: orangered;
-}
+    .social-media{
+        display: flex;
+        gap: 50px;
+        font-size: 2rem;
+    }
+
+    .social-media a:hover{
+        color: var(--bg-color);
+        background-color: orangered;
+    }
 
 
 .section1-left button{
@@ -117,10 +119,91 @@ nav div:hover{
     font-weight: bold;
     border-radius: 20px;
     transition: .2s ease;
+    letter-spacing: 1px;
 }
 
 .section1-left button:hover{
     border: 2px solid orangered;
     background-color: var(--bg-color);
     color: orangered    ;
+}
+
+
+.about{
+    background-color: var(--second-bg-color);
+    width:  100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-right{
+    width: 50%;
+    height: 70vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    color: #fff;
+    gap: 10px;
+}
+
+.about-right h1 span{
+    color: orangered;
+    
+}
+
+.about-right h1{
+    font-size: 3rem;
+}
+
+
+.about-right button{
+    background-color: orangered;
+    border: 2px solid orangered;
+    outline: none;
+    width: 10rem;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: .2s ease;
+    letter-spacing: 1px;
+}
+
+.about-right button:hover{
+    border: 2px solid orangered;
+    background-color: var(--second-bg-color);
+    color: orangered    ;
+}
+
+
+.skills{
+    background-color: var(--second-bg-color);
+    width:  100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.skills-left{
+    width: 50%;
+    height: 70vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    color: #fff;
+    gap: 10px;
+}
+
+
+
+.skills-left h1{
+    font-size: 3rem;
+    color: orangered;
 }
