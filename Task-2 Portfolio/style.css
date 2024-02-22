@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;;
+}
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f242d;
+    color: white;
+    padding: 10px;
+}
+nav h2{
+    margin-left: 40px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-right: 40px;
+}
+
+Ul li{
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .2s ease;
+    
+}
+
+ul li:hover{
+    color: orangered
+}
+
+
+nav div{
+    
+    transition: .2s ease;
+}
+nav div:hover{
+    color: orangered;
+}
+
+
+.section1{
+    background-color: var(--bg-color);
+    width:  100vw;
+    height: 70vh;
+}
+
+
+.section1-left{
+    /* background-color: red; */
+    width: 50%;
+    height: 70vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    color: #fff;
+    gap: 10px;
+}
+
+.section1-left h1{
+    font-size: 4rem;
+    color: orangered;
+}
+
+.section1-left .hello{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid orangered;
+    color: orangered;
+    transition: .2s ease;
+}
+
+.social-media{
+    display: flex;
+    gap: 50px;
+    font-size: 2rem;
+}
+
+.social-media a:hover{
+    color: var(--bg-color);
+    background-color: orangered;
+}
+
+
+.section1-left button{
+    background-color: orangered;
+    border: 2px solid orangered;
+    outline: none;
+    width: 10rem;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: .2s ease;
+}
+
+.section1-left button:hover{
+    border: 2px solid orangered;
+    background-color: var(--bg-color);
+    color: orangered    ;
+}
