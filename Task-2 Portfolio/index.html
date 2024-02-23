@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iqrash Jalil</title>
+    <title>Iqrash Jalil-Frontend Developer</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -13,68 +17,71 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
-    <nav>
-      <div>
-        <h2>Iqrash Jalil</h2>
-      </div>
 
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-    <section class="section1">
-      <div class="section1-left">
-        <h2 class="hello">Hello It's Me</h2>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Iqrash J.</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!-- Home section Designing -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
         <h1>Iqrash Jalil</h1>
+        <h3>And I'm a <span>MERN Stack Developer</span></h3>
         <p>
           With knowledge in web development and design,<br />
           I offer the best projects resulting in quality work.
         </p>
         <div class="social-media">
-          <a href="">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href=""><i class="fa-brands fa-github"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://web.facebook.com/igiqrash1"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/iqrashjalil/"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="https://github.com/iqrashjalil"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/iqrash-jalil-456895214/"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
         </div>
-        <button>Download CV</button>
+        <a href="cv.pdf" class="btn">Download CV</a>
       </div>
-      <div class="section1-right"></div>
-    </section>
-    <section class="about">
-      <div class="about-left"></div>
-      <div class="about-right">
-        <h1>About <span>Me</span></h1>
-        <h2>Web Developer</h2>
-        <p>
-          "Greetings from Talagang, Pakistan! I'm a passionate frontend <br />
-          developer with a knack for crafting immersive web experiences.<br />I
-          thrive on turning ideas into pixel-perfect realities."
-        </p>
-        <button>Read More</button>
+      <div class="home-img">
+        <img src="https://i.ibb.co/BsjvbqM/1.png" alt="" />
       </div>
     </section>
-    <section class="skills">
-      <div class="skills-left">
-        <h1>Skills</h1>
-        <p>
-          As a MERN stack developer, I possess a comprehensive skill set that
-          <br />
-          encompasses proficiency in JavaScript, particularly in React.js for
-          <br />
-          frontend development and Node.js with Express.js for backend <br />
-          development. My expertise extends to MongoDB for efficient data <br />
-          storage and management in NoSQL environments.
-        </p>
+    <!-- Home section Designing -->
+
+    <!-- About section Designing -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="https://i.ibb.co/q0rffc7/2.png" alt="" />
       </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>MERN Stack Developer</h3>
+        <p>
+          "Greetings from Talagang, Pakistan! I'm a passionate <br />
+          MERN Stack developer with a knack for crafting immersive web <br />
+          experiences. I thrive on turning ideas into pixel-perfect <br />
+          realities."
+        </p>
+        <a href="https://github.com/iqrashjalil" class="btn">Read More</a>
+      </div>
+    </section>
+    <!-- About section Designing -->
+    <section class="skills" id="skills">
       <div class="skills-right">
         <span style="background-color: deepskyblue; color: whitesmoke"
           ><i class="fa-brands fa-react"></i
@@ -104,24 +111,97 @@
           ><i class="fa-solid fa-leaf"></i
         ></span>
       </div>
+      <div class="about-content">
+        <h2 class="heading" style="color: orangered">Skills</h2>
+        <p>
+          As a MERN stack developer, I possess a comprehensive skill set that
+          <br />
+          encompasses proficiency in JavaScript, particularly in React.js for
+          <br />
+          frontend development and Node.js with Express.js for backend <br />
+          development. My expertise extends to MongoDB for efficient data <br />
+          storage and management in NoSQL environments.
+        </p>
+      </div>
     </section>
-    <section class="projects">
-      <h1>Projects</h1>
-      <div class="project-cards">
-        <div>
-          <img src="" alt="" />
-          <h5>Portfolio</h5>
+
+    <!-- Portfolio section Designing -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="landing page.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Landing Page</h4>
+            <p>Created a Landing page using HTML+CSS</p>
+            <a
+              href="https://github.com/iqrashjalil/CODSOFT/tree/main/Task-1%20Landing%20Page"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
         </div>
-        <div>
-          <img src="" alt="" />
-          <h5>Portfolio</h5>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <h5>Portfolio</h5>
+
+        <div class="portfolio-box">
+          <img src="Portfolio.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Portfolio App</h4>
+            <p>Created Portfolio using HTML+CSS and JavaScript</p>
+            <a
+              href="https://github.com/iqrashjalil/CODSOFT/tree/main/Task-2%20Portfolio"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
         </div>
       </div>
     </section>
-    <section class="contact">Contact</section>
+    <!-- Portfolio section Designing -->
+
+    <!-- Contact section Designing -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form action="https://formspree.io/f/xnqkgwrl" method="POST">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <input
+            type="text"
+            name="mobile"
+            placeholder="Mobile Number"
+            required
+          />
+          <input type="text" name="address" placeholder="Address" required />
+        </div>
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+    <!-- Contact section Designing -->
+    <!-- Footer section Designing -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Iqrash Jalil | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home">
+          <i class="bx bx-up-arrow-alt"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- Footer section Designing -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
