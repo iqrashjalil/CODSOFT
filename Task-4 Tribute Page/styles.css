@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.container{
+    height: 80vh;
+    width: 100vw;
+    /* background-color: #CFD8DC; */
+
+}
+
+
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     /* background-color: red; */
+}
+
+.container{
+    display: flex;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+     flex-direction: column;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+}
