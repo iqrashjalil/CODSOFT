@@ -9,7 +9,7 @@ export default function Navbar() {
     <header>
         <div className="logo">
             <img src="images/logo.png" alt="" />
-            <h3>Job Board </h3>
+            <h3>Naukri.com</h3>
         </div>
         
     <nav className={openMenu ? "active":""}>
@@ -18,15 +18,18 @@ export default function Navbar() {
             
             <CgClose className='mobile-close' onClick={()=>{setOpenMenu(false)}}/>    
             <li><a href="/">Home</a></li>
-            <li><a href="/">Jobs</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Contact</a></li>
+            <li><a href="/">Find Jobs</a></li>
+            <li><a href="/">Companies</a></li>
+            <li><a href="/">Career Tips</a></li>
+            <li className='profile-btns'><a href="/">Settings</a></li>
+            <li className='profile-btns'><a href="/">Logout</a></li>
+
         </ul>
     </nav>
 
         
 
-    <div className='profile'>
+    <div className='nav-btns'>
         <button className='signin'>Signin</button>
         <button className='signup primary-color'>Signup</button>
     </div>
