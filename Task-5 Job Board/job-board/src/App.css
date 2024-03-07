@@ -190,11 +190,13 @@ nav ul li a:hover{
 .content{
   margin: 10px;
   display: flex;
+  width: 100%;
+  min-height: 94.5vh;
 
 }
 
 .content-left{
-  width: 20rem;
+  width: 20%;
   border: 1.5px solid var(--border-color);
   border-radius: 10px;
   padding: 10px;
@@ -255,10 +257,8 @@ nav ul li a:hover{
 /* Right Section Styling */
 
 .content-right{
-  /* background-color: #5182ef; */
-  width: 100%;
+  width: 80%;
   margin-left: 10px;
-  /* border: 1.5px solid ; */
 }
 
 .job-div{
@@ -582,47 +582,186 @@ footer {
   text-decoration: none;
 }
 
+.settings-right{
+  width: 100%;
+  margin-left: 10px;
+  border: 1.5px solid var(--border-color);
+  border-radius: 10px;
+
+}
+
+.settings-right nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 10px 10px 0px 0px;
+  padding-right: 10px;
+}
+
+.settings-right nav h2{
+  color: white;
+  padding: 4px;
+}
+
+.settings-right .settings-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.settings-right{
+  width: 100%;
+}
+.settings-section img{
+
+  width: 100px;
+}
+
+.settings-inputs{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.settings-inputs .input{
+  border: 1.5px solid var(--border-color);
+  padding: 10px;
+  width: 100%;
+
+}
+
+.settings-inputs .input:focus{
+    border: 1.5px solid var(--border-color);
+    outline: none;
+}
+
+.settings-save{
+  border: none;
+  font-weight: 500;
+  border-radius: var(--btn-padding);
+  padding: 0 10px;
+  border-radius: 2px;
+  font-size: 16px;
+  outline: none;
+  background-color: white;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 
 
 
+.main-section{
+  width: 100%;
+  min-height: 94.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-section h1{
+
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.main-section form{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  gap: 10px;
+}
+
+
+.main-section form input{
+  border: 1.5px solid var(--border-color);
+  padding: 10px;
+  width: 100%;
+  }
+
+.main-section form input:focus{
+  border: 1.5px solid var(--border-color);
+  outline: none;
+}
+
+.main-section form textarea{
+  border: 1.5px solid var(--border-color);
+  padding: 10px;
+}
+
+.main-section form textarea:focus{
+  border: 1.5px solid var(--border-color);
+  outline: none;
+}
+
+.main-section form button{
+  border: 2px solid var(--primary-color);
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 2px;
+  font-size: 16px;
+  outline: none;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .1s ease;
+}
+
+.main-section form button:hover{
+  color: var(--primary-color);
+  background-color: white;
+}
 
 
 
+.jobDetail-section{
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.jobDetail-section h1{
+  color: var(--primary-color);
+}
 
+.detail-container{
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.detail-container button{
+  border: 2px solid var(--primary-color);
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 2px;
+  font-size: 16px;
+  outline: none;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .1s ease;
+  width: 10rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.detail-container button:hover{
+  color: var(--primary-color);
+  background-color: white;
+}
 
 
 
@@ -659,6 +798,11 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
+  .main-section form{
+    width: 40%;
+  }
+  
   
 }
 
@@ -673,13 +817,20 @@ footer {
     display: block;
     font-size: 20px;
   }
-  form h1{
+  .reg-form h1{
     font-size: 1.5rem;
     
     
   }
 
-  form{
+  .detail-container{
+    padding: 2rem;
+  }
+
+  .main-section form{
+    width: 50%;
+  }
+  .reg-form{
     padding: 20px;
   }
   .navbar-list{
@@ -731,8 +882,11 @@ footer {
     display: none;
   }
 
+  .content-right{
+    width: 100%;
+  }
+
   .job-div{
-    /* background-color: #3d5afe; */
     display: flex;
     justify-content: center;
   }
@@ -789,6 +943,11 @@ footer {
     /* background-color: red; */
     
    }
+
+   .main-section form{
+    width: 80%;
+  }
+
    ::placeholder{
     font-size: 14px;
    }

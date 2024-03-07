@@ -11,8 +11,9 @@ export const Home = () => {
     <Navbar />
     <Banner title = "Job"/>
     <section className='content'>
-
+        {/* <div className='content-left'> */}
         <Profile />
+        {/* </div> */}
         <div className='content-right'>
             <h3>Results</h3>
 

@@ -14,6 +14,7 @@ export const Profile = () => {
                 <hr />
                 <div className='content-options'>
                 <button className='settings-btn'> <CiSettings className='icon' /> Settings</button> 
+                
                 <button className='logout-btn'> <CiLogout className='icon' />  Logout</button>
                 </div>
         </div>

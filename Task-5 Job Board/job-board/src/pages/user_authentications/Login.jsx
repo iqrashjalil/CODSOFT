@@ -39,17 +39,7 @@ export const Login = () => {
             </span>
             </div>
 
-            <label htmlFor="account-type">Account Type</label>
-            <div>
-            <span><MdOutlineSupervisorAccount className='reg-password-icon'/> 
-            <select id="accountType">
-            <option value="select-type">Select Account Type</option>
-                <option value="candidate">Candidate Account</option>
-                <option value="company">Company Account</option>
-            </select>
-            </span>
-            </div>
-
+           
 
         <button type='submit'>Login</button>
         <p>Don't Have An Account? <a href="/">Sign Up!</a></p>
